@@ -346,6 +346,10 @@ input,textarea,select{font-family:inherit;}
 .subbrand-text strong{color:var(--text);font-family:var(--font-heading);font-size:1.02rem;font-weight:700;}
 .subbrand-text small{color:var(--text-faint);font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;}
 
+.subbrand-plain{display:flex;flex-direction:column;line-height:1.15;margin-bottom:22px;}
+.subbrand-plain strong{color:var(--text);font-family:var(--font-heading);font-size:1.6rem;font-weight:700;}
+.subbrand-plain small{color:var(--text-faint);font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-top:5px;}
+
 /* ===================== PAGE HERO (interior pages) ===================== */
 .page-hero{padding:calc(var(--nav-h) + 40px) 0 40px;position:relative;}
 .breadcrumb{font-size:.85rem;color:var(--text-faint);margin-bottom:18px;}

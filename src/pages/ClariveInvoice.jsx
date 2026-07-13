@@ -74,18 +74,13 @@ export default function ClariveInvoice() {
         crumbLabel="ClariveInvoice"
         title="FBR Digital Invoicing"
         lead="Effortless, Secure, and Fully Compliant Integration with FBR."
-        sloganTag="GO DIGITAL STAY-AHEAD"
+        sloganTag={null}
         preTitle={
-          <motion.div className="subbrand-badge" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4, delay: 0.15 }}>
-            <span className="subbrand-icon">
-              <i className="fa-solid fa-circle-check" />
-            </span>
-            <span className="subbrand-text">
-              <strong>
-                Clarive<span className="logo-accent">Invoice</span>
-              </strong>
-              <small>Invoicing Suite</small>
-            </span>
+          <motion.div className="subbrand-plain" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.15 }}>
+            <strong>
+              Clarive<span className="logo-accent">Invoice</span>
+            </strong>
+            <small>Invoicing Suite</small>
           </motion.div>
         }
         visual={
