@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import Reveal, { RevealGroup, RevealItem } from '../components/Reveal'
 import GlowOrbs from '../components/GlowOrbs'
 import PageHero from '../components/PageHero'
@@ -28,6 +29,14 @@ export default function Taxation() {
         crumbLabel="Taxation Services"
         title="Taxation Services"
         lead="Income tax, sales tax, withholding tax and everything in between — handled by consultants who keep up with FBR regulations so you don't have to."
+        preTitle={
+          <motion.div className="subbrand-plain" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.15 }}>
+            <strong>
+              Clarive<span className="logo-accent">TAX</span>
+            </strong>
+            <small>Taxation Suite</small>
+          </motion.div>
+        }
       >
         <div className="hero-cta" style={{ marginTop: 24 }}>
           <NavLink to="/contact" className="btn btn-primary btn-lg">

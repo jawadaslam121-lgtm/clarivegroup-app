@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import Reveal, { RevealGroup, RevealItem } from '../components/Reveal'
 import GlowOrbs from '../components/GlowOrbs'
 import PageHero from '../components/PageHero'
@@ -34,6 +35,14 @@ export default function Software() {
         crumbLabel="Cloud Accounting Software"
         title="Cloud Accounting Software"
         lead="Everything your business needs to manage sales, purchases, inventory and reporting — built for sole traders, growing SMEs and accounting teams alike."
+        preTitle={
+          <motion.div className="subbrand-plain" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.15 }}>
+            <strong>
+              Clarive<span className="logo-accent">ERP</span>
+            </strong>
+            <small>Accounting Suite</small>
+          </motion.div>
+        }
       >
         <div className="hero-cta" style={{ marginTop: 24 }}>
           <NavLink to="/contact" className="btn btn-primary btn-lg">
