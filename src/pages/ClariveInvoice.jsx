@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Reveal, { RevealGroup, RevealItem } from '../components/Reveal'
 import GlowOrbs from '../components/GlowOrbs'
@@ -105,9 +104,9 @@ export default function ClariveInvoice() {
         </div>
 
         <div className="hero-cta" style={{ marginTop: 10 }}>
-          <NavLink to="/contact" className="btn btn-primary btn-lg">
+          <a href="https://invoice.clarivegroup.com" className="btn btn-primary btn-lg">
             Get Started <i className="fa-solid fa-arrow-right" />
-          </NavLink>
+          </a>
           <a href="#fbr-faq" className="btn btn-outline btn-lg">
             FBR Invoicing FAQs
           </a>
@@ -260,7 +259,7 @@ export default function ClariveInvoice() {
       <CTASection
         title="Get your business FBR-ready"
         text="Book a free consultation and we'll walk you through exactly what's needed for compliant digital invoicing."
-        primary={{ to: '/contact', label: 'Get Started' }}
+        primary={{ to: 'https://invoice.clarivegroup.com', label: 'Get Started' }}
         secondary={{ to: '/taxation', label: 'Explore Taxation Services' }}
       />
     </>

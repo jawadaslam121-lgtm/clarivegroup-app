@@ -1,6 +1,21 @@
 import { NavLink } from 'react-router-dom'
 import Reveal from './Reveal'
 
+function CTAButton({ to, label, className }) {
+  if (/^https?:\/\//.test(to)) {
+    return (
+      <a href={to} className={className}>
+        {label}
+      </a>
+    )
+  }
+  return (
+    <NavLink to={to} className={className}>
+      {label}
+    </NavLink>
+  )
+}
+
 export default function CTASection({ title, text, primary, secondary }) {
   return (
     <section className="section-tight">
@@ -10,14 +25,8 @@ export default function CTASection({ title, text, primary, secondary }) {
             <h2>{title}</h2>
             <p>{text}</p>
             <div className="btn-group">
-              <NavLink to={primary.to} className="btn btn-primary btn-lg">
-                {primary.label}
-              </NavLink>
-              {secondary && (
-                <NavLink to={secondary.to} className="btn btn-outline btn-lg">
-                  {secondary.label}
-                </NavLink>
-              )}
+              <CTAButton to={primary.to} label={primary.label} className="btn btn-primary btn-lg" />
+              {secondary && <CTAButton to={secondary.to} label={secondary.label} className="btn btn-outline btn-lg" />}
             </div>
           </div>
         </Reveal>
