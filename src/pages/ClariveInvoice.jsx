@@ -10,7 +10,7 @@ import { fbrFaqItems } from '../data/faq'
 
 const heroFeatures = [
   { icon: 'fa-solid fa-file-excel', title: 'Bulk Excel Import', text: 'Hundreds of invoices, one upload' },
-  { icon: 'fa-solid fa-list-check', title: 'All 28 FBR Sale Types', text: 'Compound & fixed-per-unit rates' },
+  { icon: 'fa-solid fa-list-check', title: 'For All Business Sectors', text: '' },
   { icon: 'fa-solid fa-qrcode', title: 'IRN + QR on Every Invoice', text: 'Instantly compliant PDF' },
   { icon: 'fa-solid fa-vial', title: 'Sandbox + Secure', text: 'Test before you go live' },
 ]
@@ -119,7 +119,7 @@ export default function ClariveInvoice() {
               <i className={f.icon} />
               <span>
                 <strong style={{ display: 'block', fontSize: '.88rem' }}>{f.title}</strong>
-                <span style={{ display: 'block', fontSize: '.78rem', color: 'var(--text-faint)', fontWeight: 500 }}>{f.text}</span>
+                {f.text && <span style={{ display: 'block', fontSize: '.78rem', color: 'var(--text-faint)', fontWeight: 500 }}>{f.text}</span>}
               </span>
             </div>
           ))}
