@@ -26,7 +26,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-inner">
         <NavLink to="/" className="logo">
-          <span className="logo-mark">C</span>
+          <img src="/logo.png" alt="ClariveGroup" className="logo-mark-img" />
           <span className="logo-wrap">
             <span>
               Clarive<span className="logo-accent">Group</span>

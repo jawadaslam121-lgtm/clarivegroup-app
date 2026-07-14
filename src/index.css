@@ -104,6 +104,7 @@ input,textarea,select{font-family:inherit;}
   color:var(--on-accent);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.15rem;flex-shrink:0;
   box-shadow:0 6px 18px rgba(29,78,216,.3);
 }
+.logo-mark-img{width:44px;height:44px;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 4px 10px rgba(29,78,216,.28));}
 .logo-wrap{display:flex;flex-direction:column;line-height:1.1;}
 .logo-accent{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent;}
 .logo-slogan{font-family:var(--font-body);font-size:.65rem;font-weight:600;letter-spacing:.03em;color:var(--text-faint);margin-top:1px;}

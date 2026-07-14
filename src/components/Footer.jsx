@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-col footer-about">
           <NavLink to="/" className="logo">
-            <span className="logo-mark">C</span>
+            <img src="/logo.png" alt="ClariveGroup" className="logo-mark-img" />
             <span>
               Clarive<span className="logo-accent">Group</span>
             </span>
