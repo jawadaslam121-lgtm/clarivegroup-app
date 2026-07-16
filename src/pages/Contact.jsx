@@ -15,7 +15,7 @@ export default function Contact() {
     e.preventDefault()
     const subject = encodeURIComponent(`New enquiry from ${form.name} via ClariveGroup website`)
     const body = encodeURIComponent(`${form.message}\n\nFrom: ${form.name} (${form.email})\nPhone: ${form.phone}\nInterested in: ${form.interest}`)
-    window.location.href = `mailto:jawadaslam121@gmail.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:info@clarivegroup.com?subject=${subject}&body=${body}`
     setNote('Opening your email client to send this message...')
   }
 
@@ -33,7 +33,7 @@ export default function Contact() {
 
             <div className="contact-detail">
               <i className="fa-solid fa-envelope" />
-              <a href="mailto:jawadaslam121@gmail.com">jawadaslam121@gmail.com</a>
+              <a href="mailto:info@clarivegroup.com">info@clarivegroup.com</a>
             </div>
             <div className="contact-detail">
               <i className="fa-solid fa-phone" />

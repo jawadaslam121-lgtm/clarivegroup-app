@@ -77,8 +77,8 @@ export default function Footer() {
           <h4>Contact Us</h4>
           <ul>
             <li>
-              <a href="mailto:jawadaslam121@gmail.com">
-                <i className="fa-solid fa-envelope" /> jawadaslam121@gmail.com
+              <a href="mailto:info@clarivegroup.com">
+                <i className="fa-solid fa-envelope" /> info@clarivegroup.com
               </a>
             </li>
             <li>
